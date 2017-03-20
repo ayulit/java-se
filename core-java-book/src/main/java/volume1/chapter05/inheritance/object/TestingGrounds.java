@@ -18,6 +18,10 @@ public class TestingGrounds {
 		obj = staff;       // ok!
 		obj = new int[10]; // ok!
 		
+		obj.equals(null);
+//		null.equals(obj); Forbidden!  
+		
+		System.out.println(obj.equals(null));
 	}
 
 }
