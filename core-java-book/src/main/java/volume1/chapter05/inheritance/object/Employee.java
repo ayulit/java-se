@@ -54,8 +54,11 @@ public class Employee
       if (otherObject == null) return false;
 
       // if the classes don't match, they can't be equal
-      if (getClass() != otherObject.getClass()) return false;
+//      if (getClass() != otherObject.getClass()) return false;
 
+      if (!(otherObject instanceof Employee)) return false;
+
+      
       // now we know otherObject is a non-null Employee
       Employee other = (Employee) otherObject;
 
