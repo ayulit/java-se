@@ -65,4 +65,10 @@ public class Employee
       // test whether the fields have identical values
       return Objects.equals(name, other.name) && salary == other.salary && Objects.equals(hireDay, other.hireDay);
    }
+   
+   @Override
+   public int hashCode() {
+	return Objects.hash(name + salary + hireDay);	   
+   }  
+   
 }
